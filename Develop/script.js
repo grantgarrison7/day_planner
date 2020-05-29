@@ -178,3 +178,9 @@ switch(true){
         break;
 }
 
+block8aEl.addEventListener("click", function(event) {
+    var addEvent = document.createElement("INPUT");
+    addEvent.setAttribute("type", "text");
+    addEvent.setAttribute("value", "Enter event here.");
+    block8aEl.appendChild(addEvent);
+});
