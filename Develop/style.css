@@ -70,3 +70,15 @@ body {
     transition: all .3s ease-in-out;
   }
   
+/* my code */
+html, body {
+    overflow-x: hidden;
+  }
+
+  .block {
+    margin: 0 -9999rem;
+    /* add back negative margin value */
+    padding: 0.25rem 9999rem;
+    background: rgba(0, 0, 0, 0.5);
+    height: 70px;
+  }
