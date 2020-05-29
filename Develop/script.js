@@ -17,4 +17,5 @@ month = month + 1;
 //display the date in currentDayEl
 currentDayEl.textContent = month + "/" + day + "/" + year;
 
+//color code for past, present, and future
 
