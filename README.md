@@ -1,6 +1,10 @@
 # day_planner
 Planner to effectively manage the time of a busy professional.
 
+Published Website: https://grantgarrison7.github.io/day_planner/
+
+
+
 Instructions
 
 # 05 Third-Party APIs: Work Day Scheduler
