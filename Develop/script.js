@@ -12,6 +12,16 @@ var block4pEl = document.querySelector("#block4p");
 var block5pEl = document.querySelector("#block5p");
 
 //global variables
+var addEvent8 = "";
+var addEvent9 = "";
+var addEvent10 = "";
+var addEvent11 = "";
+var addEvent12 = "";
+var addEvent1 = "";
+var addEvent2 = "";
+var addEvent3 = "";
+var addEvent4 = "";
+var addEvent5 = "";
 
 //variables to store the date
 var date = new Date();
@@ -179,8 +189,101 @@ switch(true){
 }
 
 block8aEl.addEventListener("click", function(event) {
-    var addEvent = document.createElement("INPUT");
-    addEvent.setAttribute("type", "text");
-    addEvent.setAttribute("value", "Enter event here.");
-    block8aEl.appendChild(addEvent);
+    if (addEvent8 === ""){
+    addEvent8 = document.createElement("INPUT");
+    addEvent8.setAttribute("type", "text");
+    addEvent8.setAttribute("value", "Enter event here.");
+    block8aEl.appendChild(addEvent8);
+    }
+});
+
+var button8aEl = document.querySelector("#button8a");
+
+button8aEl.addEventListener("click", function(event){
+
+    var event8 = block8aEl.value;
+    console.log(event8);
+    localStorage.setItem('addEvent8', JSON.stringify(addEvent8));
+
+});
+
+block9aEl.addEventListener("click", function(event) {
+    if (addEvent9 === ""){
+    addEvent9 = document.createElement("INPUT");
+    addEvent9.setAttribute("type", "text");
+    addEvent9.setAttribute("value", "Enter event here.");
+    block9aEl.appendChild(addEvent9);
+    }
+});
+
+block10aEl.addEventListener("click", function(event) {
+    if (addEvent10 === ""){
+    addEvent10 = document.createElement("INPUT");
+    addEvent10.setAttribute("type", "text");
+    addEvent10.setAttribute("value", "Enter event here.");
+    block10aEl.appendChild(addEvent10);
+    }
+});
+
+block11aEl.addEventListener("click", function(event) {
+    if (addEvent11 === ""){
+    addEvent11 = document.createElement("INPUT");
+    addEvent11.setAttribute("type", "text");
+    addEvent11.setAttribute("value", "Enter event here.");
+    block11aEl.appendChild(addEvent11);
+    }
+});
+
+block12pEl.addEventListener("click", function(event) {
+    if (addEvent12 === ""){
+    addEvent12 = document.createElement("INPUT");
+    addEvent12.setAttribute("type", "text");
+    addEvent12.setAttribute("value", "Enter event here.");
+    block12pEl.appendChild(addEvent12);
+    }
+});
+
+block1pEl.addEventListener("click", function(event) {
+    if (addEvent1 === ""){
+    addEvent1 = document.createElement("INPUT");
+    addEvent1.setAttribute("type", "text");
+    addEvent1.setAttribute("value", "Enter event here.");
+    block1pEl.appendChild(addEvent1);
+    }
+});
+
+block2pEl.addEventListener("click", function(event) {
+    if (addEvent2 === ""){
+    addEvent2 = document.createElement("INPUT");
+    addEvent2.setAttribute("type", "text");
+    addEvent2.setAttribute("value", "Enter event here.");
+    block2pEl.appendChild(addEvent2);
+    }
+});
+
+block3pEl.addEventListener("click", function(event) {
+    if (addEvent3 === ""){
+    addEvent3 = document.createElement("INPUT");
+    addEvent3.setAttribute("type", "text");
+    addEvent3.setAttribute("value", "Enter event here.");
+    block3pEl.appendChild(addEvent3);
+    }
+});
+
+block4pEl.addEventListener("click", function(event) {
+    if (addEvent4 === ""){
+    addEvent4 = document.createElement("INPUT");
+    addEvent4.setAttribute("type", "text");
+    addEvent4.setAttribute("value", "Enter event here.");
+    block4pEl.appendChild(addEvent4);
+    }
+});
+
+block5pEl.addEventListener("click", function(event) {
+    if (addEvent5 === ""){
+    addEvent5 = document.createElement("INPUT");
+    addEvent5.setAttribute("type", "text");
+    addEvent5.setAttribute("value", "Enter event here.");
+    block5pEl.appendChild(addEvent5);
+    }
 });
