@@ -1,53 +1,48 @@
+/* Step to ensure that there is no overflow */
+html,
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1;
-  }
-  
-
-   
-  .jumbotron {
-    text-align: center;
-    background-color: transparent;
-    color: black;
-    border-radius: 0;
-    border-bottom: 10px solid black;
-  }
-  
-  .description{
-    white-space: pre-wrap;
-  }
-  
-  .time-block{
-    text-align: center;
-    border-radius: 15px;
-  }
-  
-  .row {
-    white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid white;;
-  }
-  
-  
-  
-/* my code */
-html, body {
-    overflow-x: hidden;
-  }
-
-  .block {
-    margin: 0 -9999rem;
-    /* add back negative margin value */
-    padding: 0.25rem 9999rem;
-    height: 70px;
-    border-color: black;
-    border-style: solid;
-    border-width: 4px 4px 0 4px;
-    font-weight: bold;
-    font-size: 18px;
-  }
-
-  .save {
-    float: right;
-  }
+  overflow-x: hidden;
+}
+/* Formats entire page */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+/* Used to format the header */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+/* Makes the timeblocks stretch the entire page */
+.block {
+  margin: 0 -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+  border-color: rgb(148, 108, 108);
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  font-weight: bold;
+  font-size: 18px;
+}
+/* Ensures that the save button is on the right side */
+.save {
+  float: right;
+}
+/* Used in the function to set color of timeblock based on time */
+.past {
+  background-color: coral;
+}
+.present {
+  background-color: yellow;
+}
+.future {
+  background-color: lawngreen;
+}
+/* Class for the text that is small */
+.small {
+  font-size: 12px;
+}
