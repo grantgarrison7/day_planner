@@ -29,7 +29,6 @@ $(".save").on("click", function () {
   var timeBlock = $(this).parent().attr("id");
   var addEvent = $(this).siblings(".event").val();
   localStorage.setItem(timeBlock, addEvent);
-  console.log(timeBlock, addEvent);
 });
 //Retrieves information from localstorage so text remains on page when refreshed or reopened
 $("#block8").children(".event").val(localStorage.getItem("block8"));
