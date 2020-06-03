@@ -13,10 +13,10 @@ function colorCode() {
     var blockHour = $(this).attr("id").split("block")[1];
     if (currentHour > blockHour) {
       $(this).addClass("past");
-    } else if (currentHour === blockHour) {
-      $(this).addClass("present");
-    } else {
+    }else if (currentHour < blockHour) {
       $(this).addClass("future");
+    } else {
+      $(this).addClass("present");
     }
   });
 }
